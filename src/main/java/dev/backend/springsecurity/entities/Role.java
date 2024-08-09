@@ -26,7 +26,7 @@ public class Role {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = "SCOPE_" + name;
     }
 
     public enum Values {
@@ -34,7 +34,7 @@ public class Role {
         ADMIN(1L),
         BASIC(2L);
 
-        long roleId;
+         long roleId;
 
         Values(long roleId) {
             this.roleId = roleId;
